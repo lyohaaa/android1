@@ -16,7 +16,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="473dp"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView10"
@@ -28,7 +28,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="518dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView7"
@@ -40,7 +40,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="427dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView6"
@@ -52,7 +52,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -70,6 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="HardcodedText,ImageContrastCheck"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -83,7 +85,8 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView5"
@@ -95,7 +98,8 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
     <Button
         android:id="@+id/button5"
@@ -110,7 +114,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintOverlap" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="381dp"
@@ -120,7 +125,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView4">
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        tools:ignore="VisualLintBounds">
 
         <ImageView
             android:id="@+id/imageView8"
@@ -129,7 +135,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/ic_launcher_foreground" />
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            tools:ignore="ContentDescription" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

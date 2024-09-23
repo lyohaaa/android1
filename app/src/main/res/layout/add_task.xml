@@ -19,19 +19,22 @@
         android:textColor="#4CAF50"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:layout_editor_absoluteX="80dp" />
+        tools:layout_editor_absoluteX="80dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
         android:text="Добавление задачи"
         android:textColor="#E91E63"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -40,17 +43,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_launcher_foreground"
-        tools:layout_editor_absoluteY="67dp" />
+        tools:layout_editor_absoluteY="67dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="149dp"
         android:layout_height="71dp"
         android:backgroundTint="#E91E63"
+        android:importantForAccessibility="no"
         android:text="Сохранить"
+        android:textColor="#000000"
         android:textColorLink="#9C27B0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteY="580dp" />
 
     <ImageView
@@ -61,6 +68,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_dialog_email"
-        tools:layout_editor_absoluteY="480dp" />
+        tools:layout_editor_absoluteY="480dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

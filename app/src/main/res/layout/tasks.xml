@@ -10,25 +10,33 @@
         android:id="@+id/imageView12"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:srcCompat="@android:drawable/checkbox_on_background"
-        tools:layout_editor_absoluteX="348dp"
-        tools:layout_editor_absoluteY="321dp" />
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
         app:srcCompat="@android:drawable/checkbox_off_background"
-        tools:layout_editor_absoluteX="348dp"
-        tools:layout_editor_absoluteY="379dp" />
+        tools:layout_editor_absoluteY="379dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:contentDescription="TODO"
+        android:importantForAccessibility="no"
         app:srcCompat="@android:drawable/checkbox_off_background"
         tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="493dp" />
+        tools:layout_editor_absoluteY="493dp"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -36,7 +44,8 @@
         android:layout_height="30dp"
         app:srcCompat="@android:drawable/checkbox_off_background"
         tools:layout_editor_absoluteX="348dp"
-        tools:layout_editor_absoluteY="272dp" />
+        tools:layout_editor_absoluteY="283dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,12 +56,15 @@
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="34dp" />
+        tools:layout_editor_absoluteY="34dp"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="318dp"
         android:layout_height="360dp"
         android:orientation="vertical"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintBounds"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="205dp">
 
@@ -62,7 +74,8 @@
             android:layout_height="wrap_content"
             android:text="Сделать уроки"
             android:textColor="#4CAF50"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,LabelFor" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView4"
@@ -71,7 +84,8 @@
             android:baselineAligned="false"
             android:text="Успеть на созвон в 18:00"
             android:textColor="#4CAF50"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,LabelFor" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView3"
@@ -79,7 +93,8 @@
             android:layout_height="wrap_content"
             android:text="Купить продуктов"
             android:textColor="#4CAF50"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,LabelFor" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView2"
@@ -87,7 +102,8 @@
             android:layout_height="wrap_content"
             android:text="Убраться дома"
             android:textColor="#4CAF50"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,LabelFor" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView"
@@ -95,7 +111,8 @@
             android:layout_height="wrap_content"
             android:text="Забрать сына с тюрьмы"
             android:textColor="#4CAF50"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,LabelFor" />
 
         <AutoCompleteTextView
             android:id="@+id/autoCompleteTextView6"
@@ -103,7 +120,8 @@
             android:layout_height="wrap_content"
             android:text="Приготовить ужин"
             android:textColor="#4CAF50"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,LabelFor" />
 
     </LinearLayout>
 
@@ -111,25 +129,32 @@
         android:id="@+id/imageView5"
         android:layout_width="47dp"
         android:layout_height="45dp"
+        android:importantForAccessibility="no"
         app:srcCompat="@android:drawable/ic_input_add"
         tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="88dp" />
+        tools:layout_editor_absoluteY="88dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:contentDescription="TODO"
+        android:importantForAccessibility="no"
         app:srcCompat="@android:drawable/checkbox_off_background"
         tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="217dp" />
+        tools:layout_editor_absoluteY="217dp"
+        tools:ignore="ContentDescription,HardcodedText,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:importantForAccessibility="no"
         app:srcCompat="@android:drawable/checkbox_on_background"
         tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="432dp" />
+        tools:layout_editor_absoluteY="432dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView14"
@@ -137,7 +162,8 @@
         android:layout_height="45dp"
         app:srcCompat="@android:drawable/ic_delete"
         tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="88dp" />
+        tools:layout_editor_absoluteY="88dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -145,24 +171,27 @@
         android:layout_height="30dp"
         app:srcCompat="@android:drawable/btn_star_big_on"
         tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="432dp" />
+        tools:layout_editor_absoluteY="432dp"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
         app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="217dp" />
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_compass"
-        tools:layout_editor_absoluteY="744dp" />
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
